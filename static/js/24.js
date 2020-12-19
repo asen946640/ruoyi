@@ -1,0 +1,15 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[24],{
+
+/***/ "./src/api/system/dict/type.js":
+/*!*************************************!*\
+  !*** ./src/api/system/dict/type.js ***!
+  \*************************************/
+/*! exports provided: listType, getType, addType, updateType, delType, clearCache, optionselect */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"listType\", function() { return listType; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getType\", function() { return getType; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"addType\", function() { return addType; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"updateType\", function() { return updateType; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"delType\", function() { return delType; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"clearCache\", function() { return clearCache; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"optionselect\", function() { return optionselect; });\n/* harmony import */ var _utils_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/utils/request */ \"./src/utils/request.js\");\n // 查询字典类型列表\n\nfunction listType(query) {\n  return Object(_utils_request__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n    url: '/system/dict/type/list',\n    method: 'get',\n    params: query\n  });\n} // 查询字典类型详细\n\nfunction getType(dictId) {\n  return Object(_utils_request__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n    url: '/system/dict/type/' + dictId,\n    method: 'get'\n  });\n} // 新增字典类型\n\nfunction addType(data) {\n  return Object(_utils_request__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n    url: '/system/dict/type',\n    method: 'post',\n    data: data\n  });\n} // 修改字典类型\n\nfunction updateType(data) {\n  return Object(_utils_request__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n    url: '/system/dict/type',\n    method: 'put',\n    data: data\n  });\n} // 删除字典类型\n\nfunction delType(dictId) {\n  return Object(_utils_request__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n    url: '/system/dict/type/' + dictId,\n    method: 'delete'\n  });\n} // 清理参数缓存\n\nfunction clearCache() {\n  return Object(_utils_request__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n    url: '/system/dict/type/clearCache',\n    method: 'delete'\n  });\n} // 获取字典选择框列表\n\nfunction optionselect() {\n  return Object(_utils_request__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({\n    url: '/system/dict/type/optionselect',\n    method: 'get'\n  });\n}\n\n//# sourceURL=webpack:///./src/api/system/dict/type.js?");
+
+/***/ })
+
+}]);
